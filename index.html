@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Form HTML</title>
+  </head>
+  <body>
+
+    <h1>Form Registrasi</h1>
+
+    <!-- form = wadah untuk semua input -->
+    <!-- action = kemana data dikirim (kita isi # dulu karena belum ada backend) -->
+    <form action="#" method="POST">
+
+      <!-- Label + Input Teks -->
+      <label for="nama">Nama Lengkap:</label>
+      <input type="text" id="nama" name="nama" placeholder="Masukkan nama kamu" />
+
+      <br /><br />
+
+      <!-- Input Email -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="contoh@gmail.com" />
+
+      <br /><br />
+
+      <!-- Input Password -->
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Minimal 8 karakter" />
+
+      <br /><br />
+
+      <!-- Input Nomor -->
+      <label for="umur">Umur:</label>
+      <input type="number" id="umur" name="umur" min="17" max="99" />
+
+      <br /><br />
+
+      <!-- Dropdown / Select -->
+      <label for="level">Level:</label>
+      <select id="level" name="level">
+        <option value="">-- Pilih Level --</option>
+        <option value="pemula">Pemula</option>
+        <option value="menengah">Menengah</option>
+        <option value="mahir">Mahir</option>
+      </select>
+
+      <br /><br />
+
+      <!-- Radio Button -->
+      <p>Tujuan belajar:</p>
+      <input type="radio" id="kerja" name="tujuan" value="kerja" />
+      <label for="kerja">Cari Kerja</label>
+
+      <input type="radio" id="freelance" name="tujuan" value="freelance" />
+      <label for="freelance">Freelance</label>
+
+      <input type="radio" id="keduanya" name="tujuan" value="keduanya" />
+      <label for="keduanya">Keduanya</label>
+
+      <br /><br />
+
+      <!-- Checkbox -->
+      <p>Skill yang ingin dipelajari:</p>
+      <input type="checkbox" id="html" name="skill" value="html" />
+      <label for="html">HTML & CSS</label>
+
+      <input type="checkbox" id="js" name="skill" value="js" />
+      <label for="js">JavaScript</label>
+
+      <input type="checkbox" id="react" name="skill" value="react" />
+      <label for="react">React</label>
+
+      <br /><br />
+
+      <!-- Textarea -->
+      <label for="pesan">Ceritakan tujuanmu:</label>
+      <br />
+      <textarea id="pesan" name="pesan" rows="4" cols="50" placeholder="Saya ingin..."></textarea>
+
+      <br /><br />
+
+      <!-- Tombol Submit -->
+      <button type="submit">Daftar Sekarang</button>
+
+    </form>
+
+  </body>
+</html>
